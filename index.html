@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geneci Groupe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+     <h1>
+  <a href="#accueil">
+    <img src="images/logo.png" alt="Logo Geneci Groupe" class="logo">
+  </a>
+    </h1>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil">
+  <h2 data-aos="fade-up" data-aos-delay="100">Votre partenaire en transport, BTP et énergie</h2>
+  <p data-aos="fade-up" data-aos-delay="200">
+    Transport d’hydrocarbures, construction, travaux publics – Geneci Groupe vous accompagne avec professionnalisme et engagement.
+  </p>
+  <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="300">Contactez-nous</a>
+</section>
+
+
+ <section id="apropos" class="presentation-section">
+  <h2 data-aos="fade-up">Présentation</h2>
+  <div class="presentation-content">
+    <div class="presentation-image" data-aos="fade-right">
+      <img src="images/team-work.JPG" alt="Équipe de Geneci Groupe en chantier" />
+    </div>
+    <div class="presentation-text" data-aos="fade-left" data-aos-delay="200">
+      <h4 class="sous-titre">Une expertise bâtie sur 32 ans d'engagement</h4>
+      <p>
+        <strong>Geneci Groupe</strong> est une entreprise familiale ivoirienne fondée il y a plus de 32 ans. Depuis sa création, elle s’est imposée comme un acteur incontournable dans les domaines du <strong>transport d’hydrocarbures</strong>, du <strong>BTP</strong>, du <strong>reprofilage de routes</strong> et de la <strong>construction de bâtiments</strong>.
+      </p>
+      <p>
+        Grâce à une équipe passionnée, un savoir-faire éprouvé et une vision à long terme, nous offrons des solutions fiables, sécurisées et durables à nos partenaires publics comme privés.
+      </p>
+      <p>
+        Notre culture d’entreprise repose sur des valeurs solides : l’esprit de famille, la rigueur professionnelle, le respect des engagements et l’innovation constante.
+      </p>
+      <p>
+        Geneci Groupe est aujourd’hui fier de contribuer activement au développement des infrastructures et de l’économie en Côte d’Ivoire.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+ <section id="services">
+  <h2>Nos Services</h2>
+  <div class="services-container">
+    
+   <div class="service-box" data-aos="fade-right" data-aos-delay="100">
+      <a href="transport-hydrocarbures.html" class="service-link">
+        <i class="fas fa-gas-pump service-icon"></i>
+        <h3>Transport d'hydrocarbures</h3>
+        <p>Transport sécurisé de carburants et produits pétroliers avec une flotte spécialisée et des chauffeurs certifiés.</p>
+      </a>
+    </div>
+
+    <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-road service-icon"></i>
+      <h3>Reprofilage de routes</h3>
+      <p>Rénovation et entretien des routes avec reprofilage durable conforme aux normes techniques.</p>
+    </div>
+
+    <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
+      <i class="fas fa-truck-moving service-icon"></i>
+      <h3>Transport routier</h3>
+      <p>Transport national et régional de marchandises avec fiabilité, ponctualité et sécurité.</p>
+    </div>
+
+    <div class="service-box" data-aos="fade-right" data-aos-delay="400">
+      <a href="construction-batiments.html" class="service-link">
+        <i class="fas fa-building service-icon"></i>
+        <h3>Constructions de bâtiments</h3>
+        <p>Constructions résidentielles, industrielles et commerciales avec rigueur et expertise.</p>
+      </a>
+    </div>
+
+    <div class="service-box" data-aos="fade-up" data-aos-delay="500">
+      <i class="fas fa-hard-hat service-icon"></i>
+      <h3>Travaux publics</h3>
+      <p>Infrastructures routières, assainissement et travaux pour l'État et les collectivités.</p>
+    </div>
+    <div class="service-box" data-aos="zoom-in" data-aos-delay="600">
+  <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+  <h3>Entrepôts & Dépôts de Conteneurs</h3>
+  <p>
+    Mise à disposition d'espaces sécurisés pour le stockage temporaire ou de longue durée des conteneurs et marchandises. Nos dépôts sont stratégiquement situés pour optimiser la logistique.
+  </p>
+</div>
+
+
+  </div>
+</section>
+
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+   <form action="send.php" method="POST" id="contact-form">
+  <label for="nom">Nom</label>
+  <input type="text" id="nom" name="nom" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Envoyer</button>
+</form>
+
+    <div class="map-container" style="margin-top:30px;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1649418879556!2d-4.083448024725271!3d5.391818294587206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1bfefebddfb15%3A0x5fc78a79b30e3560!2sDMT%20(Base%20Logistique)!5e0!3m2!1sfr!2sci!4v1734111595842!5m2!1sfr!2sci" 
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+ <div class="contact-details">
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <div>
+      <strong>Adresse</strong><br>
+      ABIDJAN-YOPOUGON Quartier ZONE INDUSTRIELLES 
+    </div>
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-phone-alt"></i>
+    <div>
+      <strong>Téléphone</strong><br>
+      <a href="tel:+2250707070707">+225 27 21 24 30 48</a>
+    </div>
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <div>
+      <strong>Email</strong><br>
+      <a href="mailto:genicigroupe@gmail.com">genicigroupe@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Geneci Groupe – Tous droits réservés
+  </footer>
+  <button id="btn-top" title="Remonter en haut">↑</button>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/Script.js"></script>
+</body>
+</html>
