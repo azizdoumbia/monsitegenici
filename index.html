@@ -2,28 +2,40 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Geneci Groupe</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-     <h1>
-  <a href="#accueil">
-    <img src="images/logo.png" alt="Logo Geneci Groupe" class="logo">
-  </a>
-    </h1>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+   <nav>
+  <h1>
+    <a href="#accueil">
+      <img src="images/logo.png" alt="Logo Geneci Groupe" class="logo">
+    </a>
+  </h1>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#partenaires">Nos partenaires</a></li>
+    <li><a href="#performances">Nos Performances</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
   </header>
 
   <section class="hero" id="accueil">
@@ -31,34 +43,127 @@
   <p data-aos="fade-up" data-aos-delay="200">
     Transport d’hydrocarbures, construction, travaux publics – Geneci Groupe vous accompagne avec professionnalisme et engagement.
   </p>
-  <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="300">Contactez-nous</a>
 </section>
 
 
  <section id="apropos" class="presentation-section">
   <h2 data-aos="fade-up">Présentation</h2>
   <div class="presentation-content">
-    <div class="presentation-image" data-aos="fade-right">
-      <img src="images/team-work.JPG" alt="Équipe de Geneci Groupe en chantier" />
-    </div>
     <div class="presentation-text" data-aos="fade-left" data-aos-delay="200">
-      <h4 class="sous-titre">Une expertise bâtie sur 32 ans d'engagement</h4>
-      <p>
-        <strong>Geneci Groupe</strong> est une entreprise familiale ivoirienne fondée il y a plus de 32 ans. Depuis sa création, elle s’est imposée comme un acteur incontournable dans les domaines du <strong>transport d’hydrocarbures</strong>, du <strong>BTP</strong>, du <strong>reprofilage de routes</strong> et de la <strong>construction de bâtiments</strong>.
-      </p>
-      <p>
-        Grâce à une équipe passionnée, un savoir-faire éprouvé et une vision à long terme, nous offrons des solutions fiables, sécurisées et durables à nos partenaires publics comme privés.
-      </p>
-      <p>
-        Notre culture d’entreprise repose sur des valeurs solides : l’esprit de famille, la rigueur professionnelle, le respect des engagements et l’innovation constante.
-      </p>
-      <p>
-        Geneci Groupe est aujourd’hui fier de contribuer activement au développement des infrastructures et de l’économie en Côte d’Ivoire.
-      </p>
+      <h4 class="sous-titre">Doumbia Moussa – Fondateur & PDG de Geneci Groupe</h4>
+
+      <p><strong>Monsieur Doumbia Moussa</strong> est le Président Directeur Général de <strong>Geneci Groupe</strong>, un conglomérat ivoirien de référence dans les domaines du <strong>transport</strong>, des <strong>travaux publics</strong>, de la <strong>construction de batiments</strong> et de la <strong>logistique pétrolière</strong>.</p>
+
+      <p>En <strong> 1987</strong>, il fondait <strong>Doumbia Moussa Transport (DMT)</strong>, aujourd’hui filiale spécialisée dans le <strong>transport d’hydrocarbures et de produits pétroliers</strong> sur toute la Côte d’Ivoire.</p>
+
+      <p>Visionnaire, homme de terrain et bâtisseur engagé, il a su transformer une entreprise familiale en un groupe structuré et ambitieux, porté par l’excellence, la rigueur et l’innovation.</p>
+
+      <p>À travers Geneci Groupe, il offre aujourd’hui des services intégrés de :
+        <strong>Transport de marchandises générales et spécialisées</strong>
+        <strong>Transport sécurisé d’hydrocarbures via DMT</strong>
+        <strong>Travaux publics, construction et rénovation de bâtiments</strong>
+        <strong>Logistique industrielle et solutions sur mesure</strong>
+        </p>
+      <p>Son ambition est claire : <strong>faire de Geneci Groupe le leader du transport ivoirien</strong> et un acteur clé du développement économique du pays.</p>
+
+      <p>Les valeurs qui guident son leadership sont la <strong>discipline</strong>, la <strong>transparence</strong>, la <strong>sécurité</strong>, la <strong>performance</strong> et l’<strong>innovation</strong>. Sous sa direction, Geneci Groupe est aujourd’hui un pilier fiable, aussi bien pour les grands projets publics que pour les initiatives privées.</p>
+    </div>
+     <div class="presentation-image" data-aos="fade-right">
+      <img src="images/present-pdg.jpg" alt="Doumbia Moussa, Président Directeur Général de Geneci Groupe" />
     </div>
   </div>
 </section>
 
+<section class="partenaires" id="partenaires">
+  <h2 class="titre-section">Partenaires de Confiance</h2>
+  <div class="logos-partenaires">
+    <div class="carte-partenaire"><img src="images/logos/sodepci.png" alt="Sodepci"></div>
+    <div class="carte-partenaire"><img src="images/logos/total.png" alt="TotalEnergies"></div>
+    <div class="carte-partenaire"><img src="images/logos/oryx.png" alt="Oryx Energies"></div>
+    <div class="carte-partenaire"><img src="images/logos/oilibya.jpg" alt="Libya Oil"></div>
+    <div class="carte-partenaire"><img src="images/logos/petroci.png" alt="Petroci"></div>
+    <div class="carte-partenaire"><img src="images/logos/vivo.png" alt="Vivo Energy"></div>
+    <div class="carte-partenaire"><img src="images/logos/gestoci.png" alt="Gestoci"></div>
+    <div class="carte-partenaire"><img src="images/logos/sifo.png" alt="Sifo Energy"></div>
+  </div>
+</section>
+
+<section class="performances-section" id="performances">
+  <h2 data-aos="fade-up" class="titre-performances">Nos Performances</h2>
+  
+  <div class="performances-grid">
+    <div class="performance-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="performance-icon">
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="performance-number counter">32</div>
+      <div class="performance-label">Années d'expérience</div>
+      <div class="performance-description">
+        Plus de trois décennies d'expertise dans le transport et la construction
+      </div>
+    </div>
+
+    <div class="performance-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="performance-icon">
+        <i class="fas fa-truck"></i>
+      </div>
+      <div class="performance-number counter">66</div>
+      <div class="performance-label">Véhicules en flotte</div>
+      <div class="performance-description">
+        Une flotte moderne et diversifiée pour tous types de transport
+      </div>
+    </div>
+
+    <div class="performance-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="performance-icon">
+        <i class="fas fa-project-diagram"></i>
+      </div>
+      <div class="performance-number counter">500</div>
+      <div class="performance-label">Projets réalisés</div>
+      <div class="performance-description">
+        Constructions, travaux publics et missions de transport menées à bien
+      </div>
+    </div>
+
+    <div class="performance-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="performance-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <div class="performance-number counter">186</div>
+      <div class="performance-label">Employés</div>
+      <div class="performance-description">
+        Une équipe qualifiée et dévouée au service de l'excellence
+      </div>
+    </div>
+
+    <div class="performance-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="performance-icon">
+        <i class="fas fa-road"></i>
+      </div>
+      <div class="performance-number counter">50000</div>
+      <div class="performance-label">Km parcourus/mois</div>
+      <div class="performance-description">
+        Des milliers de kilomètres en sécurité sur les routes ivoiriennes
+      </div>
+    </div>
+
+    <div class="performance-card" data-aos="fade-up" data-aos-delay="600">
+      <div class="performance-icon">
+        <i class="fas fa-award"></i>
+      </div>
+      <div class="performance-number counter">99</div>
+      <div class="performance-label">% Satisfaction client</div>
+      <div class="performance-description">
+        Un taux de satisfaction qui témoigne de notre engagement qualité
+      </div>
+    </div>
+  </div>
+
+  <div class="performance-quote" data-aos="fade-up" data-aos-delay="700">
+    <p>"Notre succès se mesure non seulement en chiffres, mais aussi par la confiance que nos clients nous accordent depuis plus de 30 ans."</p>
+    <cite>— Doumbia Moussa, PDG Geneci Groupe</cite>
+  </div>
+</section>
 
  <section id="services">
   <h2>Nos Services</h2>
@@ -104,9 +209,7 @@
     Mise à disposition d'espaces sécurisés pour le stockage temporaire ou de longue durée des conteneurs et marchandises. Nos dépôts sont stratégiquement situés pour optimiser la logistique.
   </p>
 </div>
-
-
-  </div>
+ </div>
 </section>
 
 
