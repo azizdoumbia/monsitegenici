@@ -780,7 +780,7 @@ footer {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 1px;
+  gap: 2px;
   z-index: 10001;
 }
 
@@ -790,7 +790,7 @@ footer {
   background-color: #004E7C;
   border-radius: 2px;
   transition: all 0.3s ease;
-  margin: 5px auto;
+  margin: 3px auto;
   display: block;
 }
 
