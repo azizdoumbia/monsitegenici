@@ -780,7 +780,7 @@ footer {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 2px;
+  gap: 1px;
   z-index: 10001;
 }
 
