@@ -795,13 +795,13 @@ footer {
 }
 
 .menu-toggle.active span:nth-child(1) {
-  transform: rotate(75deg) translate(10px, 5px);
+  transform: rotate(60deg) translate(10px, 5px);
 }
 .menu-toggle.active span:nth-child(2) {
   opacity: 0;
 }
 .menu-toggle.active span:nth-child(3) {
-  transform: rotate(-75deg) translate(10px, -5px);
+  transform: rotate(-60deg) translate(10px, -5px);
 }
 
 @media (max-width: 768px) {
