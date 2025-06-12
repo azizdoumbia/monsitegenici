@@ -805,11 +805,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-
-  .nav-links {
+  nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -823,16 +819,19 @@ footer {
     z-index: 9999;
   }
 
-  .nav-links.show {
+  nav ul.show {
     display: flex;
   }
 
-  .nav-links li a {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul li a {
     color: #004E7C;
     font-weight: bold;
   }
 }
-
 
 html {
   scroll-behavior: smooth;
