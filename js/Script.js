@@ -156,12 +156,4 @@ document.addEventListener('DOMContentLoaded', function () {
     navMenu.classList.toggle('show');
   });
 });
-const cartes = document.querySelectorAll('.carte-partenaire');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.3 });
-
-cartes.forEach(carte => observer.observe(carte));
 
