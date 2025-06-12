@@ -135,7 +135,6 @@ section h2 {
 }
 
 /* Présentation */
-/* Présentation */
 .presentation-section {
   opacity: 0;
   transform: translateY(60px);
@@ -210,8 +209,35 @@ section h2 {
     flex: 1 1 100%;
     max-width: 100%;
   }
+  .presentation-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .presentation-text {
+    text-align: center;
+  }
+
+  .sous-titre {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .presentation-text {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .sous-titre {
+    font-size: 16px;
+  }
+
+  .presentation-image img {
+    border-radius: 10px;
+  }
 }
 
+/* section partenaires */
 .partenaires {
   background-color: #004E7C; /* bleu principal du site */
   padding: 60px 20px;
@@ -247,11 +273,13 @@ section h2 {
 
 .logos-partenaires {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 30px;
   overflow-x: auto;
-  padding-bottom: 10px;
+  overflow-y: hidden; /* ✅ enlève scroll vertical */
+  scroll-snap-type: x mandatory;
+  padding: 10px 10px 20px;
 }
 
 .logos-partenaires::-webkit-scrollbar {
@@ -270,7 +298,7 @@ section h2 {
   width: 100px;
   height: 80px;
   background-color: white;
-  padding: 20px;
+  padding: 16px;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -278,11 +306,18 @@ section h2 {
   justify-content: center;
   align-items: center;
   transform: scale(1); /* état par défaut */
+  scroll-snap-align: start; /* ✅ Chaque logo s'aligne au centre */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
-
+.carte-partenaire.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .carte-partenaire img {
-  max-width: 150%;
-  max-height: 120%; /* limite la hauteur */
+  max-width: 100%;
+  max-height: 60px; /* limite la hauteur */
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -298,17 +333,35 @@ section h2 {
 .carte-partenaire:hover img {
   filter: none;
 }
-
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
   .logos-partenaires {
-    gap: 16px;
-    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
   }
 
   .carte-partenaire {
+    flex: 0 1 100px; /* permet un wrap fluide */
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .logos-partenaires {
+    gap: 16px;
+    padding-left: 10px; /* Suppression padding excessif */
+    padding-right: 10px;
+   
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carte-partenaire {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
     width: 90px;
     height: 70px;
-    padding: 8px;
+    padding: 10px;
   }
 
   .carte-partenaire img {
@@ -319,6 +372,25 @@ section h2 {
     font-size: 24px;
   }
 }
+@media (hover: none) {
+  .carte-partenaire:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .carte-partenaire:hover img {
+    filter: grayscale(100%);
+  }
+}
+
+/* Ajoute une animation fluide sur mobile quand la carte devient visible */
+.carte-partenaire.visible {
+  opacity: 1;
+  transform: scale(1.05) translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
 /* Animation d'apparition */
 @keyframes fadeInUp {
   0% {
@@ -805,7 +877,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav ul {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -819,19 +895,16 @@ footer {
     z-index: 9999;
   }
 
-  nav ul.show {
+  .nav-links.show {
     display: flex;
   }
 
-  .menu-toggle {
-    display: flex;
-  }
-
-  nav ul li a {
+  .nav-links li a {
     color: #004E7C;
     font-weight: bold;
   }
 }
+
 
 html {
   scroll-behavior: smooth;
