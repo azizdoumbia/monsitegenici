@@ -614,6 +614,10 @@ section h2 {
   color: #004E7C;
   flex-shrink: 0;
 }
+.service-link:hover h3 {
+  color:  #FFC107;
+}
+
 .service-box p {
   font-size: 15px;
   color: #444;
@@ -627,7 +631,7 @@ section h2 {
   font-size: 40px;
   color: #004E7C;
   margin-bottom: 15px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease  color 0.3s ease;
 }
 .service-link {
   text-decoration: none;
@@ -638,7 +642,12 @@ section h2 {
 .service-link:hover .service-box {
   transform: scale(1.02);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+ 
 }
+.service-link:hover .service-icon {
+  color: #FFC107;/* Jaune doré */
+}
+
 
 
 /* Footer */
