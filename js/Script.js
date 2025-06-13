@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     counters.forEach(counter => counterObserver.observe(counter));
   }
-
-  // === Animation section partenaires ===
-  const partenairesSection = document.querySelector('.partenaires');
+ 
+    // === Animation section partenaires + cartes ===
+ const partenairesSection = document.querySelector('.partenaires');
   if (partenairesSection) {
     const partenairesObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -118,8 +118,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     }, { threshold: 0.1 });
-    partenairesObserver.observe(partenairesSection);
-  }
+    partenairesObserver.observe(partenairesSection);}
+const cartes = document.querySelectorAll('.carte-partenaire');
+if (cartes.length > 0) {
+  const carteObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle('visible', entry.isIntersecting);
+    });
+  }, { threshold: 0.3 });
+
+  cartes.forEach(carte => carteObserver.observe(carte));
+}
+
 
   // === Soumission du formulaire ===
   const form = document.getElementById("contact-form");
@@ -156,3 +166,4 @@ document.addEventListener('DOMContentLoaded', function () {
     navMenu.classList.toggle('show');
   });
 });
+
